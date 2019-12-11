@@ -6,7 +6,7 @@ Class {
 
 { #category : #baselines }
 BaselineOf3DaysVM >> baseline: spec [ 
-   <spec>
+   	<baseline>
         
 	spec for: #common do: [
 		spec package: 'SmiLang' .
