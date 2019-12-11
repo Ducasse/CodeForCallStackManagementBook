@@ -45,7 +45,10 @@ SmiCompiler >> astFor: method [
 { #category : #private }
 SmiCompiler >> callFunctionFor: selector [
 	^ SmiCallFunction new
-		function: (self class new compilePharoMethod: (SmiExamples compiledMethodAt: selector ifAbsent: [ (Smalltalk at: #SmiAdditionnalExamples)>>selector ]));
+		function: (self class new 
+							compilePharoMethod: (SmiExamples 
+															compiledMethodAt: selector 
+															ifAbsent: [ (self class environment at: #SmiAdditionnalExamples)>>selector ]));
 		yourself 
 ]
 

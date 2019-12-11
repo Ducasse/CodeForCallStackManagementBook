@@ -4,7 +4,7 @@ Class {
 	#category : #'SmiLang-tests'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #helper }
 SmiStackInterpreterTests >> interpreterClass [
 	^ SmiStackInterpreter
 ]
